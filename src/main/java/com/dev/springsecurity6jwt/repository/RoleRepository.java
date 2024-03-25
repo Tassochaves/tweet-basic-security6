@@ -7,5 +7,7 @@ import com.dev.springsecurity6jwt.entities.Role;
 
 @Repository
 public interface RoleRepository extends JpaRepository<Role, Long>{
+
+    Role findByName(String name);
     
 }
